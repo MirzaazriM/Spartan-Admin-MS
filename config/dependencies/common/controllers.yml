@@ -1,0 +1,60 @@
+services:
+
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: true
+        
+    Application\Controller\:
+        resource: '../../../src/Application/Controller/*'
+        
+    controller.landing:
+        alias: 'Application\Controller\Landing'
+        
+    controller.admins:
+        alias: 'Application\Controller\AdminsController'
+
+    controller.policy:
+        alias: 'Application\Controller\PolicyController'
+
+    controller.statistics:
+        alias: 'Application\Controller\StatisticsController'
+
+    controller.monolog:
+        alias: 'Application\Controller\MonologController'
+
+    controller.language:
+        alias: 'Application\Controller\LanguageController'
+
+    controller.apps:
+        alias: 'Application\Controller\AppsController'
+
+    controller.packages:
+        alias: 'Application\Controller\PackagesController'
+
+    controller.workoutplans:
+        alias: 'Application\Controller\WorkoutPlansController'
+
+    controller.nutritionplans:
+        alias: 'Application\Controller\NutritionPlansController'
+
+    controller.workouts:
+        alias: 'Application\Controller\WorkoutsController'
+
+    controller.exercises:
+        alias: 'Application\Controller\ExercisesController'
+
+    controller.tags:
+        alias: 'Application\Controller\TagsController'
+
+    controller.recepies:
+        alias: 'Application\Controller\RecepiesController'
+
+    controller.users:
+        alias: 'Application\Controller\UsersController'
+
+    controller.notification:
+        alias: 'Application\Controller\PushController'
+
+    controller.login:
+        alias: 'Application\Controller\LoginController'

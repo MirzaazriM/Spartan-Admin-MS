@@ -1,0 +1,87 @@
+services:
+
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+
+    Model\Mapper\AdminsMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\AdminsMapper'
+
+    Model\Mapper\PolicyMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\PolicyMapper'
+
+    Model\Mapper\StatisticsMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\StatisticsMapper'
+
+    Model\Mapper\MonologMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\MonologMapper'
+
+    Model\Mapper\LanguageMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\LanguageMapper'
+
+    Model\Mapper\AppsMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\AppsMapper'
+
+    Model\Mapper\PackagesMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\PackagesMapper'
+
+    Model\Mapper\WorkoutPlansMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\WorkoutPlansMapper'
+
+    Model\Mapper\NutritionPlansMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\NutritionPlansMapper'
+
+    Model\Mapper\WorkoutsMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\WorkoutsMapper'
+
+    Model\Mapper\ExercisesMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\ExercisesMapper'
+
+    Model\Mapper\TagsMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\TagsMapper'
+
+    Model\Mapper\RecepiesMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\RecepiesMapper'
+
+    Model\Mapper\UsersMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\UsersMapper'
+
+    Model\Mapper\PushMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\PushMapper'
+
+    Model\Mapper\LoginMapper:
+        factory: Component\MapperFactory:create
+        arguments:
+            - 'Model\Mapper\LoginMapper'
